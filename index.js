@@ -175,14 +175,31 @@ http.createServer(async function(Request, Response) {
             case "docs":
               Status = 200;
               Data = `<!DOCTYPE html>
-              <html>
-                <head>
-
-                </head>
-                <body>
-                  <h1>theGoofyCatApi</h1>
-                </body>
-              </html>
+                       <html>
+                       <head>
+                       <title>thegoofycatapi</title>
+                       <style>
+                       body{
+                       font-family:Arial;
+                       }
+                       code{
+                       background:#eee;
+                       padding:5px;
+                       border: 1px solid #ccc;
+                       border-radius:5px;
+                       font-size:15px;
+                       }
+                       </style>
+                       </head>
+                       <body>
+                       <h1>thegoofycatapi</h1>
+                       <h2>literally the best api ever</h2>
+                       <br>
+                       <code>/cats</code> (thegoofycatapi.ga/cats)
+                       <br><br>
+                       Returns a random cat.
+                       </body>
+                       </html>
               `
               break;
             default:
